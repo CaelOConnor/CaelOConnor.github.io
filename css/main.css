@@ -1,48 +1,106 @@
-*{ 
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.pictureBorder{
-    border-color: #fff;
-    border-width: 20px;
-    border-style: solid;
-    border-radius: 50%;
-    clip-path: circle();
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 350px;
-    height: 350px;
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #0f1115;
+  color: #e4e6eb;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
-.picture{
-    clip-path: circle();
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
 }
 
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background: #93daf7;
-    padding: 10px;
+/* Headshot */
+.pictureBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.heading{
-    width: 100%;
-    max-width: 1440px;
-    background: #fff;
-    margin: 10px auto 20px;
-    padding: 10px 25px 10px;
-    border-radius: 15px;
+.picture img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #00c6ff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.information{
-    width: 100%;
-    max-width: 1440px;
-    background: #fff;
-    margin: 10px auto 10px;
-    padding: 10px 25px 10px;
-    border-radius: 15px;
+.picture img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.6);
+}
+
+/* Heading Section */
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00c6ff;
+}
+
+.heading h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #a0aec0;
+  margin-top: 1rem;
+}
+
+/* Info Section */
+.information {
+  background: #1a1d23;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;        
+  max-width: 1000px;   
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.information:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+}
+.information h3 {
+  font-size: 2rem;
+  color: #66d9ef;
+  margin-bottom: 2rem;
+}
+
+.information ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1rem;
+}
+
+.information ul li {
+  margin-bottom: .5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.information ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00c6ff;
+  font-size: 1rem;
 }
