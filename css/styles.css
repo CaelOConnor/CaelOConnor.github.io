@@ -119,25 +119,25 @@ body {
 /* Color Palette */
 
 :root {
-    --palette-backgorund-body: #0f1115;
-    --palette-background-main: #1a1d23;
-    --palette-blue: #00c6ff;
-    --palette-white: #e4e6eb;
+  --palette-backgorund-body: #0f1115;
+  --palette-background-main: #1a1d23;
+  --palette-blue: #00c6ff;
+  --palette-white: #e4e6eb;
 }
 
 
 /* CSS Reset */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 /* Wrapper */
 
 .wrapper {
-    max-inline-size: 75vw;
-    margin-inline: auto;
+  max-inline-size: 75vw;
+  margin-inline: auto;
 }
 
 body {
@@ -165,6 +165,23 @@ header {
   align-items: center;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 6vw;
+}
+
+nav li {
+  list-style-type: none;
+}
+
 main {
   background: var(--palette-background-main);
 }
@@ -176,15 +193,6 @@ footer {
 /* Images */
 /* CHANGE ME*/
 img {
-    /* border-radius: 50%; */
-    /* display: flex;
-    justify-content: center; */
-    /* align-items: center;
-    width: 220px;
-    height: 220px; */
-    /* max-width: 15%;
-    max-height: 15%; */ 
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,6 +210,15 @@ ul {
     list-style-type: circle;
 }
 
+li {
+  list-style: disc;
+  padding: 1.5px
+}
+
+li::marker {
+  color: var(--palette-blue);
+}
+
 
 /* Links */
 a {
@@ -209,3 +226,11 @@ a {
 }
 
 
+/* Hover Effect */
+header:hover{
+  
+}
+
+main:hover {
+  transform: scale(1.05);
+}
