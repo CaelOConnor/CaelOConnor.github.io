@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,6 +23,7 @@ body {
 }
 
 /* Headshot */
+/*
 .pictureBorder {
   display: flex;
   justify-content: center;
@@ -46,6 +47,7 @@ body {
 }
 
 /* Heading Section */
+/*
 .heading {
   text-align: center;
   margin-bottom: 2rem;
@@ -63,8 +65,10 @@ body {
   color: #a0aec0;
   margin-top: 1rem;
 }
+*/
 
 /* Info Section */
+/*
 .information {
   background: #1a1d23;
   border-radius: 12px;
@@ -103,4 +107,105 @@ body {
   left: 0;
   color: #00c6ff;
   font-size: 1rem;
+} 
+*/
+
+
+
+
+
+
+
+/* Color Palette */
+
+:root {
+    --palette-backgorund-body: #0f1115;
+    --palette-background-main: #1a1d23;
+    --palette-blue: #00c6ff;
+    --palette-white: #e4e6eb;
 }
+
+
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Wrapper */
+
+.wrapper {
+    max-inline-size: 75vw;
+    margin-inline: auto;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: var(--palette-backgorund-body);
+  color: var(--palette-white);
+  text-align: left;
+}
+
+main {
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+h1 {
+  color: var(--palette-blue);
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background: var(--palette-background-main);
+}
+
+footer {
+
+}
+
+/* Images */
+/* CHANGE ME*/
+img {
+    /* border-radius: 50%; */
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center;
+    width: 220px;
+    height: 220px; */
+    /* max-width: 15%;
+    max-height: 15%; */ 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00c6ff;
+}
+
+/* Lists */
+
+ul {
+    list-style-type: circle;
+}
+
+
+/* Links */
+a {
+  color: var(--palette-blue);
+}
+
+
